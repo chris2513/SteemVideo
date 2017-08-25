@@ -1,0 +1,48 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+      }
+      #status {
+        /* avoid an excessively wide status text */
+        position: relative;
+        top:1em;
+        white-space: pre;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 400px;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <!-- <script src="popup.js"></script> -->
+    <script
+    src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/video.js"></script>
+  </head>
+  <body>
+    <div id="status">
+      <h2>Add Video to Steemit</h2>
+      
+        <input type="text" id="videoURL" placeholder="Enter Video URL here..." />
+        <button type="submit" id="videoButton">Add Video</button>
+    
+  </div>
+    <!-- <img id="image-result" hidden> -->
+  </body>
+</html>
+
