@@ -1,0 +1,2 @@
+1. Work out a way to embed player in to Steemit Blog
+2. Add vimeo support 
