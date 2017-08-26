@@ -10,7 +10,7 @@ $(document).ready(function() {
         }
         // Error checking
         console.log(video);
-
+        
         // Inject the youtube player into the HTML
         $('#video').append('<iframe width="560" height="315" src='+video+' frameborder="0"></iframe>');
     });
