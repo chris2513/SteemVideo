@@ -2,6 +2,16 @@ body {
     font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
     font-size: 100%;
   }
+
+  button  input {
+    margin      : 0;
+    padding     : 0;
+    border      : 0;
+    background  : transparent;
+    font-family : inherit;
+    font-size   : 1em;
+    cursor      : pointer;
+  }
   .status {
     /* avoid an excessively wide status text */
     position: relative;
@@ -10,10 +20,26 @@ body {
     overflow: hidden;
     max-width: 400px;
     height: auto;
+    
   }
 
   .title {
     position: relative;
     top:-2em;
-    left: .5em;
+    left:1em;
+  }
+
+  .urlText {
+      border-radius:5px;
+      padding:.5em;
+  }
+
+  .videoButton {
+      background: #0066ff;
+      color:#fff;
+      border-radius:5px;
+      width:10em;
+      height:25%;
+      padding:.5em;
+      margin-top:1em;
   }
